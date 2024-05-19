@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    >
+
+  <Button
+      android:id="@+id/backButton"
+      android:layout_width="55dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="40dp"
+      android:layout_marginStart="40dp"
+      style="@style/Widget.MaterialComponents.Button.Icon"
+      android:background="?attr/selectableItemBackground"
+      android:drawableStart="@drawable/backicon"
+      />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_centerVertical="false"
+      android:layout_marginEnd="23dp"
+      android:layout_marginStart="23dp"
+      android:layout_marginTop="90dp">
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="43dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="70dp"
+        ></TextView>
+
+   <EditText
+       android:id="@+id/emailtextfield"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:backgroundTint="@color/textfieldcolor"
+       android:background="@drawable/roundstyle"
+       android:hint="Enter your email"
+       android:textSize="12dp"
+       android:paddingStart="12dp"
+       android:inputType="textEmailAddress"
+     />
+
+      <EditText
+          android:id="@+id/passwordtextfield"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginTop="20dp"
+          android:background="@drawable/roundstyle"
+          android:backgroundTint="@color/textfieldcolor"
+          android:hint="Enter your password"
+          android:paddingStart="12dp"
+          android:paddingEnd="12dp"
+          android:textSize="12dp"
+          android:inputType="textPassword"
+          app:passwordToggleEnabled="true"
+          android:ems="15"
+          android:drawableRight="@drawable/visibility_off"
+          />
+
+      <TextView
+          android:id="@+id/forgotpassword"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Forgot Password ?"
+          android:paddingEnd="12dp"
+          android:layout_gravity="end"/>
+
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:background="@drawable/roundstyle"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="50dp"
+        android:onClick="onLoginClick"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        />
+
+
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="650dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have an account?"
+            android:id="@+id/guestLinkText"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/registerlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Now"
+            android:textColor="@color/red"
+            android:paddingStart="5dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

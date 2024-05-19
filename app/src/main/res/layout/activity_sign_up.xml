@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/backicon"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="false"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="90dp">
+
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textSize="43dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="50dp"
+            ></TextView>
+
+
+        <EditText
+            android:id="@+id/emailtextfield"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/textfieldcolor"
+            android:hint="Email"
+            android:paddingStart="12dp"
+            android:textSize="12dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/passwordtextfield"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/textfieldcolor"
+            android:hint="Password"
+            android:paddingStart="12dp"
+            android:textSize="12dp"
+            android:inputType="textPassword"
+            app:passwordToggleEnabled="true"
+            />
+
+        <EditText
+            android:id="@+id/confirmpasswordtextfield"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="@color/textfieldcolor"
+            android:hint="Confirm password"
+            android:paddingStart="12dp"
+            android:textSize="12dp"
+            android:inputType="textPassword"
+            app:passwordToggleEnabled="true"/>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:background="@drawable/roundstyle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="40dp"
+            android:onClick="onLoginClick"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

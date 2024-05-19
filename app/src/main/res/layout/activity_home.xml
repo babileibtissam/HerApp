@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/backicon"
+        />
+
+    <TextView
+        android:id="@+id/WelcomeStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Welcome To Store"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="119dp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="276dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/searchview_backround"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            app:queryHint="Search product ..."
+            app:iconifiedByDefault="false"
+            />
+
+        <Button
+            android:id="@+id/favbutton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableBottom="@drawable/favorite"
+            android:paddingBottom="9dp" />
+
+        <Button
+            android:id="@+id/cartButton"
+            android:layout_width="63dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="-20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableBottom="@drawable/shopingcart"
+            android:paddingBottom="6dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

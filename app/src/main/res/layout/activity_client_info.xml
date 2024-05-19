@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clientInfo"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientInfoActivity"
+    >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/backicon"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="false"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="130dp">
+
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Please enter your information"
+            android:textSize="18dp"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            ></TextView>
+
+        <EditText
+            android:id="@+id/nameTextField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/textfieldcolor"
+            android:background="@drawable/roundstyle"
+            android:hint="Enter your name"
+            android:textSize="12dp"
+            android:paddingStart="12dp"
+            />
+
+        <EditText
+            android:id="@+id/numberTextField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/textfieldcolor"
+            android:background="@drawable/roundstyle"
+            android:layout_marginTop="15dp"
+            android:hint="Enter your phone number"
+            android:textSize="12dp"
+            android:paddingStart="12dp"
+            />
+        <EditText
+            android:id="@+id/cityTextField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/textfieldcolor"
+            android:background="@drawable/roundstyle"
+            android:layout_marginTop="15dp"
+            android:hint="Enter your city"
+            android:textSize="12dp"
+            android:paddingStart="12dp"
+            />
+        <EditText
+            android:id="@+id/addressTextField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/textfieldcolor"
+            android:background="@drawable/roundstyle"
+            android:layout_marginTop="15dp"
+            android:hint="Enter your address"
+            android:textSize="12dp"
+            android:paddingStart="12dp"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/doneButton"
+            android:background="@drawable/roundstyle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="200dp"
+            android:text="Done"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

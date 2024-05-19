@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "578885880329",
+    "project_id": "herapp-69241",
+    "storage_bucket": "herapp-69241.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578885880329:android:141f9f473923588cacc6d8",
+        "android_client_info": {
+          "package_name": "com.example.herapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb3gO7xvJEzQXUQdCGWE7UjwEMAZXPJjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

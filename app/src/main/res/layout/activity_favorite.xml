@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/favoriteBackButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/backicon"
+        android:onClick="onBackPressed"
+        />
+
+
+    <TextView
+        android:id="@+id/favoriteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Favorite"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
+        android:id="@+id/favoriteListView"
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/cartTitle"
+        android:layout_marginTop="15dp"
+        android:clipToPadding="false"
+        android:divider="@android:color/white"
+        android:dividerHeight="2dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/black"
+        android:text="Checkout"
+        android:textColor="@color/white" />
+
+</LinearLayout>
